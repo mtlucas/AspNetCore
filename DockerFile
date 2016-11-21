@@ -1,0 +1,5 @@
+FROM microsoft/dotnet:1.0.1-runtime
+MAINTAINER mike.lucas@wolterskluwer.com
+COPY bin/Debug/netcoreapp1.0/publish/ /root/
+EXPOSE 5000/tcp
+ENTRYPOINT dotnet /root/AspNetCore.dll
